@@ -1,0 +1,243 @@
+:root{
+    --main-color:#28b661;
+    --secondary-color:#f3f5f0;
+}
+a{
+    cursor: pointer!important;
+    text-decoration: none !important;
+    color:gray;
+}
+  
+  *{
+     
+      box-sizing: border-box !important;
+  }
+  .dashboard{
+      position:relative;
+    
+  }
+ 
+  .sidebar{
+    width:250px;
+    padding:20px 5px ;
+    font-size: .9rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .15) ;
+    border-bottom-left-radius:10px ;
+    min-height:75vh;
+
+}
+
+.form-container{
+    width:60%;
+    padding: 20px 0;
+}
+.form-container h3{
+    margin-bottom: 40px;
+    color:grey;
+}
+
+.save{
+    background-color: var(--main-color);
+    color:white;
+}
+.cancel{
+    background-color: var(--secondary-color);
+}
+
+.user_sec{
+    margin-bottom: 20px;
+}
+.user_sec h5{
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.user_sec h5 i{
+    color:grey;
+    margin-left:10px;
+    cursor: pointer;
+    color:var(--main-color);
+    font-size: .9rem;
+}
+
+.navbar{
+    margin-top: 20px;
+    background-color: var(--main-color);
+    border-top-right-radius: 15px!important;
+    border-top-left-radius: 15px!important;
+
+}
+.navbar-brand .user_img{
+    width: 30px;
+    height:30px;
+}
+    .user_img{
+        
+        width: 70px;
+        height:70px;
+        
+    }
+    .user_img img{
+      
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+          
+    }
+ 
+
+.side_item{
+    padding:10px 20px;
+    /* background-color: ghostwhite; */
+  transition: .5s;
+  color:gray;
+  border-bottom: 1px #9b9eaf2e  solid;
+    
+}
+.form_container_item{
+    display: none;
+}
+
+.side_item:hover ,.sel_side {
+    border-left:3px var(--main-color) solid;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius:3px ;
+    color:var(--main-color) !important;
+
+}
+.side_item:hover a{
+    color:var(--main-color) !important;
+}
+
+
+.side_item i{
+    margin-right: 10px;
+}
+.date_note,.company_note,.edit{
+    font-size: 1rem;
+    color:var(--main-color)!important;
+}
+.add{
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none;
+    background-color: var(--main-color);
+    padding:4px 14px;
+    border-radius: 3px;
+    color:white !important;
+    margin-bottom: 30px;
+}
+.form_view{
+    display: none;
+}
+.person_info{
+ 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+    
+}
+.person_info .user_sec{
+    width:200px;
+    text-align: center;
+   
+}
+.person_info .user_img{
+    width:200px;
+    height: 200px;
+
+}
+caption{
+    
+    border-bottom: 2px var(--main-color) solid;
+    width: 300px;
+    font-size:1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    /* color:var(--main-color); */
+    color:black;
+    border-radius: 3px;
+
+}
+
+.pro_date,.pro_company{
+    line-height: 1.8;
+font-size: .9rem;
+margin-left: 10px;
+font-weight: lighter;
+color:var(--main-color);
+
+}
+.pro_company{
+   
+    color:grey
+}
+.num{
+    font-weight: lighter;
+    color:grey
+}
+
+.skills_percen{
+    display: flex;
+}
+.skills_percen .skill_con_per{
+    width:100px; 
+    height:10px;
+  
+    /* background-color: var(--main-color); */
+}
+.exper_title{
+    width:40px;
+}
+.percentag{
+    background-color: var(--main-color);
+    height: 100%;
+    border-radius: 5px;
+    
+}
+
+.down_resume{
+    background-color: var(--main-color);
+    color:white;
+    padding:5px 15px;
+    margin-left: calc(300px - 31px)
+}
+.nav_container{
+    visibility: hidden;
+}
+@media(max-width:767px){
+.dashboard{
+    flex-direction: column;
+    }
+.sidebar{
+    /* width:100%; */ 
+    display: none;
+}
+.form-container{
+width:100%;
+}
+caption{
+    width:200px;
+}
+.down_resume{
+    background-color: var(--main-color);
+    color:white;
+    padding:5px 15px;
+    margin-left: calc(200px);
+}
+}
+@media(max-width:992px){
+    .nav_container{
+        visibility: visible;
+    }
+    .dashboard{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    .sidebar{
+      
+        display: none;
+    }
+   
+    }
